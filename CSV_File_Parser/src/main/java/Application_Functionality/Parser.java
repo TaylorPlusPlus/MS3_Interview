@@ -203,23 +203,26 @@ public class Parser {
         }
     }
 
+   
+    
     public void commaRemover(String line){
 
         returnString = "";
 
         boolean foundEndOfQuote = false;
         tok = new StringTokenizer(line, "," , false);
+
         while(tok.hasMoreTokens()) {
 
             token = tok.nextToken();
-            if (!token.substring(0, 1).equals("\"")) {
-                //the string needs to be added
 
-                //CHANGE!!!
-                //list.add(tokenChecker(token));
+            //each string with a comma, starts with a quotation mark, if the string doesn't have one, add it to the list
+            if (!token.substring(0, 1).equals("\"")) {
                 list.add(token);
             } else {
-                returnString += token;
+
+                //removes leading quote
+                returnString += token.substring(1, token.length() -1 );
 
                 //finding the end of the quote
                 while (!foundEndOfQuote) {
@@ -229,10 +232,9 @@ public class Parser {
                         foundEndOfQuote = true;
 
                     }
-                    returnString += token;
                 }
-                //CHANGE
-                //list.add(tokenChecker(returnString));
+                //removed ending quotation mark
+                returnString += "," + token.substring(0, token.length() - 2);
                 list.add(returnString);
             }
         }
