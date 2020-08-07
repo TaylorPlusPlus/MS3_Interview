@@ -38,3 +38,6 @@ right click main and select the option Run main.main().
 Once the application is running, the Choose a File button can be selected to bring up a file chooser.
 	The test case file for this application can be found by selecting the "target" folder and selecting ms3Interview.csv (a .csv file from anywhere can be selected).
 Once the file is selected, the program will begin parsing.
+
+The .log, .db, and .csv files that this application creates can be found within the CSV_File_Parser folder once the program is finished running.
+
