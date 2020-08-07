@@ -1,6 +1,5 @@
 # MS3_Interview Coding Challenge
 
-Author: Taylor Stoltzfus
 
 **Summary**
 
