@@ -48,5 +48,5 @@ Within the requirements for this project, it was stated that this application ne
 
 Most of the design choices made not including the choices previously stated where made to allow the application to meet the design requirements. 
 
-The only requirement that I believe I have not entirely satisfied is the processing optimization requirement. I believe the main bottle neck slowing the application down happens within the Parser class, within the parseFile() method between lines 145 and 175. 
+The only requirement that I believe I have not entirely satisfied is the processing optimization requirement. I believe the main bottle neck slowing the application down happens within the Parser class, within the parseFile() method between lines 145 and 175. I believe I could have optimized this given time, however, I believe the requirements for this project stressed haste, and because of this, I was happy with the result. 
 
