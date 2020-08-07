@@ -1,5 +1,7 @@
 # MS3_Interview Coding Challenge
 
+Author: Taylor Stoltzfus
+
 **Summary**
 
 This repository is for fellow developers to get an inside look at the application I have developed to parse a CSV file. Each line of the CSV file that is being parsed will either be submitted to an SQLite database or new CSV file depending on whether the line was formatted correctly.
