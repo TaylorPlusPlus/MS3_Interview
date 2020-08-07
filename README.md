@@ -41,3 +41,11 @@ Once the file is selected, the program will begin parsing.
 
 The .log, .db, and .csv files that this application creates can be found within the CSV_File_Parser folder once the program is finished running.
 
+**Approach and Design Choices**
+
+Within the requirements for this project, it was stated that this application needed to be completed "ASAP". Because of this, I did not spend much time on creating a "pretty" user interface. It was also stated that this application was going to support a new project. Because of this, I have decoupled most of the logic from the user interface so it could easily be integrated into a different project. 
+
+Most of the design choices made not including the choices previously stated where made to allow the application to meet the design requirements. 
+
+The only requirement that I believe I have not entirely satisfied is the processing optimization requirement. I believe the main bottle neck slowing the application down happens within the Parser class, within the parseFile() method between lines 145 and 175. 
+
